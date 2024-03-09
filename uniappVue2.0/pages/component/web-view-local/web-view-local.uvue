@@ -1,0 +1,42 @@
+<template>
+  <view class="uni-flex-item">
+    <web-view ref="web-view" class="uni-flex-item" src="/hybrid/html/local.html" @message="message" @error="error"
+      @loading="loading" @loaded="loaded">
+    </web-view>
+  </view>
+</template>
+
+<script>
+  export default {
+    data() {
+      return {
+        loadError: false,
+        loadFinish: false
+      }
+    },
+    methods: {
+      message(event : WebViewMessageEvent) {
+        console.log(JSON.stringify(event.detail));
+        uni.showModal({
+          content: JSON.stringify(event.detail),
+          showCancel: false
+        });
+      },
+      error(event : WebViewErrorEvent) {
+        this.loadError = true
+        console.log(JSON.stringify(event.detail));
+      },
+      loading(event : WebViewLoadingEvent) {
+        console.log(JSON.stringify(event.type));
+      },
+      loaded(event : WebViewLoadedEvent) {
+        this.loadFinish = true;
+        console.log(JSON.stringify(event.type));
+      }
+    }
+  }
+</script>
+
+<style>
+
+</style>
