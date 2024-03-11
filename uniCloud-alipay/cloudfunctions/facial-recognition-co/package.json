@@ -1,7 +1,0 @@
-{
-  "name": "facial-recognition-co",
-  "dependencies": {},
-  "extensions": {
-    "uni-cloud-verify": {}
-  }
-}
