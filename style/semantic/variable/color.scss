@@ -1,0 +1,49 @@
+$_color: (
+  black: #333,
+  white: white,
+  danger: #ff4e4e,
+  oldprimary: #46c37b,
+  newprimary: #2588ff,
+  regular: #666,
+  secondary: #999,
+  666: #666,
+  999: #999,
+  333: #333,
+  fff: #ffffff,
+  primary: #2588ff,
+  000: #000,
+  f5: #f5f5f5,
+  f6: #f6f5f6,
+  f7: #f7f7f7,
+  f8: #f8f8f8,
+  3a: #3a3a3a,
+  9b: #9b9b9b,
+  ccc: #cccccc,
+  ff38: #ff3838,
+  ffa6: #ffffffa6,
+  f2:#f2f2f2,
+  ff7700: #ff7700,
+  general: #03C89D,
+  a6:#a6a6a6,
+  808080:#808080,
+  d9d9d9:#d9d9d9,
+  636363:#636363,
+  383838:#383838,
+  6e: #6e6e6e,
+  ff704d:#ff704d
+);
+
+$_text-color: $_color;
+$_bg-color: $_color;
+
+$_border-color: (
+  black: black,
+  gray: #ebedf0,
+  white: white,
+  danger: #ff4e4e,
+  primary: #2588ff,
+  e5: #e5e5e5,
+  f5: #f5f5f5,
+  bf: #bfbfbf,
+  c8: #c8c8c8
+);
