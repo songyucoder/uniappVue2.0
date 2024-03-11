@@ -9,18 +9,11 @@ const store = new Vuex.Store({
     },
     mutations: {
         login(state, provider) {
-            console.log('走了没有')
             state.hasLogin = true
             // state.userInfo.uid = provider.id
             // state.uerInfo.username = provider.username
             // state.uerInfo.avatar = provider.avatar
             state.userInfo = provider
-            // 对个人信息中的头像链接进行一步兼容
-            if (state.userInfo.avatar) {
-                if(state.userInfo.avatar.indexOf('http') == -1) {
-                    state.userInfo.avatar = process.uniEnv.BASE_API  + state.userInfo.avatar
-                } 
-            }
             // 这里面再次进行了存储
             uni.setStorage({
                 key: 'userInfo',
