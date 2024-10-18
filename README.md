@@ -4,7 +4,28 @@
 # 在开发过程中，常用的的组件，基础类进行了封装,框架样式采用flex布局，以下为封装的类库
 
 - 请求框架
+  - 对request 进行封装get、post、dele、put方式参考文件目录目录api-mine-index.js 
+  - 方法概述在utils-request.js 中
+  - 图片进行上传的方式 在 utils-upload.js 中，多张上传的话，可以自行添加 for循环，然后使用队列，Promise.all 进行操作
 - 应用分包处理
+- 参考如下：
+   
+```json
+"subPackages": [
+    {
+        "root": "pagesIndex",
+        "pages": [
+           {
+               "path": "search/index",
+               "style": {
+                   "navigationBarTitleText": "搜索"
+               }
+           }
+        ]
+      }
+],
+```
+
 - 环境配置项:
  ```shell
  ;(function () {
