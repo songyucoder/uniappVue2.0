@@ -8,6 +8,7 @@
         } else if (NODE_ENV === 'test') {
             ENV_VAR = require('.env.dev.js')
         }
+		console.log(ENV_VAR)
     } else if (process.env.NODE_ENV === 'production') {
         ENV_VAR = require('.env.prod.js')
     }

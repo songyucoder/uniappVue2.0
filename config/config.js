@@ -1,4 +1,5 @@
 
+console.log(process.env)
 const baseUrl = {
     // 开发环境接口
     base_http: process.uniEnv.BASE_API,
@@ -7,7 +8,7 @@ const baseUrl = {
     pro: 'https://192.168.1.48',
 
     // 测试环境接口
-    test: 'http://www.deai66.com',
+    test: 'http://www.xxx.com',
 
 	// 图片oss资源路径
 	image_url: process.uniEnv.BASE_IMG_URL,
