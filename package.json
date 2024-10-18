@@ -1,0 +1,10 @@
+{
+    "name": "VUE2",
+        "version": "1.0.0",
+        "description": "",
+        "author": "",
+        "dependencies": {
+            "jweixin-module": "^1.6.0"
+        }
+	
+}
